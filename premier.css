@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 500vh;
+    border: 8px solid  black;
+    border-radius: 15px;
+    background-color: #F8F8F8;
+}
+
+nav{
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 800;
+    height: 10vh;
+    font-size: 1.8vh;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#p1{
+    height: 100%;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    gap: 11vw;
+    border-top: 2px solid rgb(59, 58, 58);
+    border-bottom: 2px solid rgb(59, 58, 58);
+    border-radius: 20px;
+    position: relative;
+}
+
+/* -------------------------------------------------------- */
+
+#p1::after{
+    content: "";
+    height: 100%;
+    width: 0%;
+    background-color: rosybrown;
+    position: absolute;
+    border-radius: 20px;
+    transition: all linear 0.5s;
+    z-index: -1;
+
+}
+#p1:hover::after{
+    width: 100%;
+}
+
+#p11>h1{
+    padding-left: 8vw;
+    font-size: 6vh;
+    font-weight: 900 !important;
+    font-family: 'Cabinet Grotesk' , sans-serif !important;
+    line-height: 2.8vh;
+    letter-spacing: -0.1vw;  
+}
+
+#p11>h6{
+    padding-left: 11vw;
+    font-weight: 800;
+
+}
+
+#p2{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4.5vw;
+    border-top: 2px solid rgb(59, 58, 58);
+    border-bottom: 2px solid rgb(59, 58, 58);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+/* ---------------------------------------------------------- */
+
+#p2::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background-color: chartreuse;
+    position: absolute;
+    border-radius: 20px;
+    transition: all linear 0.5s;
+    top: 41%;
+    left: 49%;
+    transform:translate(-25%,-25%) scale(0);
+    z-index: -1;
+    
+}
+
+#p2:hover::after{
+    transform:translate(-50%,-50%) scale(6);
+}
+
+#p3{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid rgb(59, 58, 58);
+    border-bottom: 2px solid rgb(59, 58, 58);
+    border-radius: 20px;
+}
+
+#p4{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    padding-left: 5vw;
+    font-size: 2.5vh;
+    border-top: 2px solid rgb(59, 58, 58);
+    border-bottom: 2px solid rgb(59, 58, 58);
+    border-radius: 20px;
+}
+
+/* ---------------------------------------------------------- */
+
+#center{
+/*     background-color: aqua; */
+    height: calc(100vh - 15vh);
+}
+
+#vid{
+    position: relative;
+/*     background-color: antiquewhite; */
+   /*  border: 2px solid black; */
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    font-size: 4vh;
+}
+#vid>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+#ooo{
+    position: absolute;
+    bottom: 0;
+/*     background-color: crimson; */
+    height: 45vh;
+    width: 95%;
+    font-family: 'Cabinet Grotesk' , sans-serif !important;
+    color: #F8F8F8;
+    padding-right: 5vw;
+    padding-left: 3vw;
+    font-weight: 100 !important;
+    mix-blend-mode: difference;
+}
+
+#overlay{
+/*     background-color: blueviolet; */
+    height: 60%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #F8F8F8;
+    
+}
+
+#overlay>h1{
+    font-size: 12vh;
+    line-height: 1;
+    /* mix-blend-mode: difference; */
+}
+#overlay>button{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    border: 2px solid #F8F8F8;
+    border-bottom: 5px solid #F8F8F8;
+    /* border-right: 5px solid #F8F8F8; */
+    background-color: transparent;
+    color: #F8F8F8;
+    font-size: 3vh;
+}
+
+
+/* -------------------------------------------------------------- */
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+/*     background-color: brown;
+ */    padding: 20px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+/*     background-color: aquamarine;
+ */    height: 100%;
+    width: 110%;
+    display: inline-block;
+    animation-name: anima;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.container>img{
+    height: 68%;
+    width: 12.2%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 30% 5%;
+    margin: 1vw;
+
+}
+
+@keyframes anima {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    font-size: 2.7vh;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5vw;
+    border-top: 2px solid rgb(59, 58, 58);
+    border-bottom: 2px solid rgb(59, 58, 58);
+    padding: 0vh 4vw;
+
+}
+
+#alphabet>h3{
+    font-size: 5vh;
+    padding-left: 2vw;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#alphabet>h5:hover{
+    /* font-size: 8vh; */
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 1vw;
+}
+
+#page2{
+    display: flex;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10vw;
+    padding: 0px 10vw 0vw 7vw;
+}
+
+#pg2-left{
+    height: 80vh;
+    width: 60%;
+    /* border: 2px solid black; */
+    background-image: url(https://img.freepik.com/premium-photo/close-up-street-fashion-slender-figure-beautiful-face-graceful-woman-isolated-white-background-portrait-female-model-studio-plastic-surgery-aesthetic-cosmetology_555986-926.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+#pg2-right{
+    height: 80vh;
+    width: 40%;
+    /* border: 2px solid black; */
+    /* background-color: antiquewhite;
+*/
+}
+
+#pg2-right>img{
+    padding-left: 0vw;
+    width: 100%;
+    height: 75%;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: 10% 60%;
+    margin: 0;
+}
+
+#right-down{
+    height: 25%;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1vw;
+    line-height: 2.5vh;
+}
+
+#l{
+    height: 100%;
+    width: 50%;
+    padding: 1vw;
+    /* background-color: antiquewhite; */
+    font-size: 3vh; 
+    line-height: 3.5vh;
+}
+
+
+#r{
+    height: 100%;
+    width: 50%;
+    padding: 1vw;
+    /* background-color: rgb(143, 118, 87); */
+    font-size: 2.8vh;
+    font-weight: 100;
+    text-align: left;
+}
+
+#page3{
+    height: 85vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background-color: #FFFFFF;
+}
+
+#page3>h3{
+    font-size: 5vh;
+    padding-left: 7vw;
+}
+
+#split{
+    height: calc(90vh - 5vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2.5vw;
+}
+
+#ll{
+    height: 100%;
+    width: 40%;
+    /* background-color: green; */
+    padding-left: 5%;
+}
+
+#ll>img{
+    height: 35%;
+    margin-top: 22%;
+    margin-left: 15%;
+    margin-bottom: 23%;
+    width: 60%;
+    border-radius: 50%;
+}
+
+#rr{
+    height: 80%;
+    width: 60%;
+    /* background-color: crimson; */
+}
+
+#rr>img{
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 35px;
+}
+
+#pg4{
+    height: 90vh;
+    width: 100%;
+    padding: 0vh 10vh;
+    margin-top: 3vh;
+/*     background-color: aqua;
+ */
+}
+
+#image{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://t4.ftcdn.net/jpg/07/08/33/55/360_F_708335598_G6QFXagngM8yqi0Nuo7fXNGYEZvB16xI.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
