@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    height: 800vh;
+    height: 985vh;
     border: 8px solid  black;
     border-radius: 15px;
     background-color: #F8F8F8;
@@ -566,6 +566,230 @@ nav{
     background-position: 0% 35%;
     border-radius: 25px;
 }
+
+#page7{
+    height: 80vh;
+    width: 95%;
+    /* background-color: beige; */
+    display: flex;
+    margin-top: 15vh;
+    font-family: 'Cabinet Grotesk' , sans-serif !important;
+    
+}
+
+#page7-left{
+    height: 100%;
+    width: 80%;
+    /* background-color: green; */
+    padding: 0vw 2vw 0vw 7vw;
+}
+#page7-left>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 25px;
+}
+
+#page7-right>img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+}
+
+#page7-right{
+    height: 100%;
+    width: 60%;
+    /* background-color: red; */
+    padding: 0vw 0vw 0vw 4vw;
+}
+#page7-right-down{
+    display: flex;
+}
+
+#page7-right-down>h2{
+    font-size: 2.8vh;
+    width: 150%;
+}
+
+#page7-right-down>h3{
+    margin-left: 2vw;
+    font-size: 2.2vh;
+    font-family: 'Satoshi' , sans-serif;
+}
+
+/* -============================================ */
+#scroll2{
+    height: 15vh;
+    width: 100%;
+    padding: 1.5vw 0vw;
+   /*  background-color: blanchedalmond; */
+    margin-top: 10vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll2 h1{
+    display: inline-block;
+    font-family: 'Cabinet Grotesk',sans-serif;
+    font-weight: 900;
+    -webkit-text-stroke: 2.5px black;
+    color: transparent;
+    font-size: 8vh;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin-right: 16px;
+}
+
+@keyframes animation {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+#page8{
+    height: 90vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 10vh;
+    gap: 2vw;
+    font-family: 'Cabinet Grotesk' , sans-serif !important;
+}
+
+#left{
+    height: 100%;
+    width: 20%;
+    /* background-color: green; */
+    padding-left: 7vw;
+}
+#left>h1{
+    
+    font-size: 5vh;
+}
+
+#mid{
+    height: 100%;
+    width: 35%;
+    /* background-color: green; */
+    margin-right: 5vw;
+}
+#mid>h2{
+    height: 25vh;
+    width: 100%;
+}
+
+#mid>img{
+    height: 55vh;    
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 20%;
+    border-radius: 15px;
+}
+
+#right{
+    height: 100%;
+    width: 35%;
+    /* background-color: green; */
+}
+#right>h2{
+    height: 25vh;
+    width: 100%;
+}
+
+#right>img{
+    height: 55vh;    
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* =================== */
+
+#footer{
+    height: 40vh;
+    width: 100%;
+    /* background-color: blanchedalmond; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    font-family: 'Cabinet Grotesk' , sans-serif !important;
+}
+
+#fl{
+    height: 100%;
+    width: 40%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    padding:  2vh 7vw;
+    border-right: 2px solid black;
+    line-height: 2.75vh;
+}
+
+#fll>h1{
+    font-size: 5vh;
+    margin-top: 2.5vh;
+}
+#flr>h2{
+    font-size: 3vh;
+}
+
+#flr{
+    font-size: 2.4vh;
+    padding-top: 1.1vw;
+}
+
+
+
+#fm{
+    height: 100%;
+    width: 20%;
+    /* background-color: rgb(3, 27, 27); */
+    padding: 2vw 4.5vw;
+    font-size: 1.5vh;
+}
+
+#fr{
+    height: 100%;
+    width: 40%;
+    /* background-color: rgb(54, 85, 85); */
+    border-left: 2px solid black;
+}
+
+#fru{
+    height: 30%;
+    width: 100%;
+    font-size: 1.5vh;
+    padding-top: 1.7vw;
+    padding-left: 2vw;
+    /* background-color: rgb(47, 154, 54); */
+}
+
+#frd{
+    height: 50%;
+    width: 100%;
+    /* background-color: rgb(13, 52, 16); */
+    border-top: 2px solid black;
+    padding: 1.7vw 2vw;
+}
+
+#icons{
+    margin-bottom: 2vh;
+    gap: 2vw;
+}
+
 
 
 
