@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    height: 500vh;
+    height: 800vh;
     border: 8px solid  black;
     border-radius: 15px;
     background-color: #F8F8F8;
@@ -318,6 +318,7 @@ nav{
     /* background-color: antiquewhite; */
     font-size: 3vh; 
     line-height: 3.5vh;
+    font-family: 'Cabinet Grotesk' , sans-serif ;
 }
 
 
@@ -329,6 +330,7 @@ nav{
     font-size: 2.8vh;
     font-weight: 100;
     text-align: left;
+    font-family: 'Cabinet Grotesk' , sans-serif ;
 }
 
 #page3{
@@ -340,6 +342,7 @@ nav{
 
 #page3>h3{
     font-size: 5vh;
+    font-family: 'Cabinet Grotesk' , sans-serif ;
     padding-left: 7vw;
 }
 
@@ -356,12 +359,15 @@ nav{
     width: 40%;
     /* background-color: green; */
     padding-left: 5%;
+    font-family: 'Cabinet Grotesk' , sans-serif ;
+    padding-left: 7vw;
 }
 
 #ll>img{
     height: 35%;
+    width: 100%;
     margin-top: 22%;
-    margin-left: 15%;
+    margin-left: 7%;
     margin-bottom: 23%;
     width: 60%;
     border-radius: 50%;
@@ -399,3 +405,185 @@ nav{
     background-size: cover;
     border-radius: 25px;
 }
+
+#up{
+    height: 95vh;
+    width: 95%;
+    padding-left: 6vw;
+    /* background-color: magenta; */
+    margin-top: 5vh;
+    font-family: 'Cabinet Grotesk' , sans-serif;
+}
+
+#up>h1{
+    margin-bottom: 5vh;
+    padding-left: 42%;
+    font-size: 7vh;
+}
+
+.up1{
+    height: 20vh;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    border-top: 2px solid black;
+    /* border-bottom: 1.5px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.upl{
+    height: 100%;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 5px;
+    
+}
+
+.upr{
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+    font-size: 3vh;
+    padding-top: 6vh;
+    padding-left: 3vw;
+
+}
+
+
+.up1>.upl>img{
+    height: 18vh;
+    width: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+#big{
+    line-height: 1.8vh;
+}
+#small{
+    font-size: 1.5vh;
+}
+
+.upll{
+    margin-left: 6.8vw;
+    font-family: 'Cabinet Grotesk' , sans-serif;
+    font-size: 2.2vh;
+}
+
+
+
+/* ---------------------------------------------- */
+
+#page5{
+    height: 80vh;
+    width: 100%;
+    /* background-color: beige; */
+    display: flex;
+    margin-top: 5vh;
+}
+
+#page5-left{
+    height: 100%;
+    width: 50%;
+    /* background-color: green; */
+    padding: 0vw 2vw 0vw 13vw;
+}
+#page5-left>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+#page5-right{
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+    padding: 0vw 2vw 0vw 4vw;
+    margin-right: 10px;
+}
+
+#page5-right>h1{
+    font-family: 'Cabinet Grotesk' , sans-serif;
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+
+#page5-right>p{
+    font-family: 'Cabinet Grotesk' , sans-serif;
+    font-size: 3.5vh;
+    margin-bottom: 2.9vh;
+    font-weight: 400;
+    line-height: 3.2vh;
+}
+
+#page5-right>h3{
+    font-family: sans-serif;
+    font-size: 2vh;
+    margin-bottom: 3vh;
+}
+
+#page5-right-down{
+    height: 60%;
+    width: 100%;
+    /* background-color: crimson; */
+    display: flex;
+    gap: 2.5vw;
+
+    
+}
+
+#page5-right-down>img{
+    height: 100%;
+    width: 40%;
+    /* background-color: green; */
+    object-fit: cover;
+    border-radius: 15px;
+
+}
+
+
+#pg6{
+    height: 90vh;
+    width: 100%;
+    padding: 0vh 10vh;
+    margin-top: 15vh;
+/*     background-color: aqua;
+ */
+}
+
+#imagee{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://im.mtvuutiset.fi/image/8043982/landscape16_9/1024/576/6fa59b9f57820462633c03fb09e2da88/UO/gigi-hadid-aop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 35%;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
