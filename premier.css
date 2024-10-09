@@ -6,8 +6,8 @@
 
 body{
     width: 100%;
-    height: 985vh;
-    border: 8px solid  black;
+    height: 981vh;
+    border: 8px solid  #101720;
     border-radius: 15px;
     background-color: #F8F8F8;
 }
@@ -16,11 +16,9 @@ nav{
     font-family: 'Satoshi', sans-serif;
     font-weight: 800;
     height: 10vh;
-    font-size: 1.8vh;
     margin-top: 5vh;
     display: flex;
     align-items: center;
-    border-radius: 15px;
 }
 
 #p1{
@@ -29,8 +27,8 @@ nav{
     display: flex;
     align-items: center;
     gap: 11vw;
-    border-top: 2px solid rgb(59, 58, 58);
-    border-bottom: 2px solid rgb(59, 58, 58);
+    border-top: 2px solid #101720;
+    border-bottom: 2px solid #101720;
     border-radius: 20px;
     position: relative;
 }
@@ -59,6 +57,7 @@ nav{
     font-family: 'Cabinet Grotesk' , sans-serif !important;
     line-height: 2.8vh;
     letter-spacing: -0.1vw;  
+    /* background-color: aqua; */
 }
 
 #p11>h6{
@@ -73,12 +72,15 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 4.5vw;
-    border-top: 2px solid rgb(59, 58, 58);
-    border-bottom: 2px solid rgb(59, 58, 58);
+    border-top: 2px solid #101720;
+    border-bottom: 2px solid #101720;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+}
+
+#p2:hover{
+    color: #F8F8F8;
 }
 /* ---------------------------------------------------------- */
 
@@ -86,7 +88,7 @@ nav{
     content: "";
     height: 50px;
     width: 50px;
-    background-color: chartreuse;
+    background-color: #101720;
     position: absolute;
     border-radius: 20px;
     transition: all linear 0.5s;
@@ -107,10 +109,37 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top: 2px solid rgb(59, 58, 58);
-    border-bottom: 2px solid rgb(59, 58, 58);
+    border-top: 2px solid #101720;
+    border-bottom: 2px solid #101720;
     border-radius: 20px;
+    position: relative;
+    /* background-color: aqua; */
+    overflow: hidden;
 }
+#p3:hover{
+    color: #F8F8F8;
+}
+
+#p3::after{
+    content: "";
+    height: 100%;
+    width: 70%;
+    background-color: #101720;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    z-index: -1;
+    transition: all linear 0.5s;
+    transform : translate(-50%, -50%) scale(0);
+    
+}
+
+#p3:hover::after{
+    transform : translate(-50%, -50%) scale(3);
+    
+}
+
 
 #p4{
     height: 100%;
@@ -120,8 +149,8 @@ nav{
     justify-content:left;
     padding-left: 5vw;
     font-size: 2.5vh;
-    border-top: 2px solid rgb(59, 58, 58);
-    border-bottom: 2px solid rgb(59, 58, 58);
+    border-top: 2px solid #101720;
+    border-bottom: 2px solid #101720;
     border-radius: 20px;
 }
 
@@ -264,23 +293,27 @@ nav{
 }
 
 #page2{
+    height: 90vh;
+    width: 100%;
     display: flex;
-    margin-top: 5vh;
+    margin-top: 0vh;
     align-items: center;
     justify-content: space-evenly;
     gap: 10vw;
-    padding: 0px 10vw 0vw 7vw;
+    padding: 10vh 10vw 10vh 7vw;
 }
 
 #pg2-left{
-    height: 80vh;
+    height: 100%;
     width: 60%;
     /* border: 2px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-image: url(https://img.freepik.com/premium-photo/close-up-street-fashion-slender-figure-beautiful-face-graceful-woman-isolated-white-background-portrait-female-model-studio-plastic-surgery-aesthetic-cosmetology_555986-926.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 25px;
+    /* border: 2px solid #101720; */
 }
 
 #pg2-right{
@@ -292,13 +325,13 @@ nav{
 }
 
 #pg2-right>img{
-    padding-left: 0vw;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 100%;
     height: 75%;
     border-radius: 25px;
     object-fit: cover;
     object-position: 10% 60%;
-    margin: 0;
 }
 
 #right-down{
@@ -309,6 +342,9 @@ nav{
     justify-content: space-evenly;
     gap: 1vw;
     line-height: 2.5vh;
+}
+#korean{
+    font-size: 7vh;
 }
 
 #l{
@@ -335,19 +371,20 @@ nav{
 
 #page3{
     height: 85vh;
-    margin-top: 4vh;
+    margin-top: 7vh;
     margin-bottom: 4vh;
     background-color: #FFFFFF;
 }
 
 #page3>h3{
+    width: 30%;
     font-size: 5vh;
     font-family: 'Cabinet Grotesk' , sans-serif ;
     padding-left: 7vw;
 }
 
 #split{
-    height: calc(90vh - 5vh);
+    height: calc(85vh - 5vh);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -374,15 +411,15 @@ nav{
 }
 
 #rr{
-    height: 80%;
+    height: 100%;
     width: 60%;
-    /* background-color: crimson; */
+   /*  background-color: crimson; */
 }
 
 #rr>img{
     width: 100%;
     height: 100%;
-    padding: 1vw;
+    padding-right: 2vh;
     object-fit: cover;
     object-position: top;
     border-radius: 35px;
@@ -392,7 +429,7 @@ nav{
     height: 90vh;
     width: 100%;
     padding: 0vh 10vh;
-    margin-top: 3vh;
+    margin-top: 10vh;
 /*     background-color: aqua;
  */
 }
@@ -553,8 +590,6 @@ nav{
     width: 100%;
     padding: 0vh 10vh;
     margin-top: 15vh;
-/*     background-color: aqua;
- */
 }
 
 #imagee{
@@ -791,7 +826,673 @@ nav{
 }
 
 
+/* ========================================================================= */
 
+/*  code fro making it reaponsive */
+
+@media (max-width: 600px) {
+
+    body{
+        width: 100%;
+        height: 705vh;
+    }
+
+
+    nav{
+        height: 7vh;
+        width: 100%;
+        margin-top: 0vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60vw;
+    }
+
+    #p1{
+        height: 100%;
+        width: 22%;
+        border: none;
+    }
+   
+    #p11>h1{
+        padding-left: 2.5vw;
+        font-size: 3vh;
+        font-family: 'Cabinet Grotesk' , sans-serif;
+    }
+    
+    #p11>h6{
+      display: none;  
+    }
+    
+    #p12>h2{
+        display: none;
+    }
+    #p2{
+        display: none;
+    }
+    
+    #p3{
+        display: none;
+    }
+    
+    
+    #p4{
+        height: 100%;
+        width: 10%;
+        font-size: 1.5vh;
+        border: none;   
+    }
+
+    #center{
+        /*     background-color: aqua; */
+            height: 60vh;
+        }
+        
+        #vid{
+            position: relative;
+            /* background-color: antiquewhite; */
+           /*  border: 2px solid black; */
+            height: 100%;
+            width: 100%;
+            padding: 7px 20px;
+            /* background-color:  crimson; */
+        }
+
+        #vid>video{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        
+        
+        #ooo{
+            position: absolute;
+            bottom: 0;
+            height: 60%;
+            width: 100%;
+            font-family: 'Cabinet Grotesk' , sans-serif;
+            padding-right: 13vw;
+            padding-left: 3vw;
+            mix-blend-mode: difference;
+        }
+        
+        #overlay{
+        /*     background-color: blueviolet; */
+            height: 70%;
+            width: 100%;
+            /* background-color: rgb(104, 56, 65); */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #F8F8F8;
+            
+        }
+        
+        #overlay>h1{
+            font-size: 3.5vh;
+            line-height: 1;
+        }
+        #overlay>button{
+            display: none;
+        }
+        
+        #ooo>h2{
+            font-size: 3vh;
+        }
+
+        #scroll{
+            height: 20vh;
+            width: 120%;
+        /*     background-color: brown;
+         */    padding-top: 10px;
+            white-space: nowrap;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        
+        .container{
+            /* background-color: aquamarine; */
+            height: 96%;
+            width: 150%;
+            padding-top: 10px;
+            display: inline-block;
+            animation-name: anima;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        
+        .container>img{
+            height: 100%;
+            width: 12%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: 30% 5%;
+            margin: 1vw;
+        
+        }
+        
+        @keyframes anima {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+
+        #alphabet{
+            font-size: 2.7vh;
+            height: 10vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 0.5vw;
+            border-top: 2px solid rgb(59, 58, 58);
+            border-bottom: 2px solid rgb(59, 58, 58);
+            padding: 0vh 4vw;
+        
+        }
+        
+        #alphabet>h3{
+            font-size: 3vh;
+            padding-left: 1vw;
+            margin-right: 1vw;
+        }
+        
+        #alphabet>h5:hover{
+            font-size: 7vh;
+        }
+        
+        #page2{
+            height: 90vh;
+            width: 100%;
+            margin-top: 5vh;
+            gap: 3vw;
+            padding: 2vh 3vw 2vh 3vw;
+            display: block;
+            /* background-color: aqua; */
+        }
+        
+        #pg2-left{
+            height: 60%;
+            width: 100%;
+            /* border: 2px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background-image: url(https://img.freepik.com/premium-photo/close-up-street-fashion-slender-figure-beautiful-face-graceful-woman-isolated-white-background-portrait-female-model-studio-plastic-surgery-aesthetic-cosmetology_555986-926.jpg);
+            background-position: 0% 20%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 25px;
+            margin-bottom: 2vh;
+            /* border: 2px solid #101720; */
+        }
+        
+        #pg2-right{
+            height: 40%;
+            width: 100%;
+            /* border: 2px solid black; */
+            /* background-color: antiquewhite; */
+            display: flex;
+       
+        }
+        
+        #pg2-right>img{
+            margin-bottom: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 100%;
+            height: 100%;
+            border-radius: 25px;
+            object-fit: cover;
+            object-position: 0% 100%;
+        }
+        
+        #right-down{
+            height: 40%;
+            width: 120%;
+            display: block;
+            gap: 1vw;
+            line-height: 2.5vh;
+        }
+
+
+        #korean{
+            font-size: 5vh;
+        }
+        
+        #l{
+            height: 100%;
+            width: 100%;
+            padding: 0vw 2vh;
+            /* background-color: antiquewhite; */
+            font-size: 2.6vh; 
+            line-height: 3.5vh;
+            font-family: 'Cabinet Grotesk' , sans-serif ;
+            margin-bottom: 3vh;
+            margin-top: 2vh;
+        }
+        
+        
+        #r{
+            height: 100%;
+            width: 120%;
+            padding: 0vw 2vh;
+            /* background-color: rgb(143, 118, 87); */
+            font-size: 2.8vh;
+            font-weight: 100;
+            text-align: left;
+            font-family: 'Cabinet Grotesk' , sans-serif ;
+        }
+
+
+        #page3{
+            height: 85vh;
+            width: 100%;
+            margin-top: 4.5vh;
+            background-color: #FFFFFF;
+        }
+        
+        #page3>h3{
+            font-size: 4vh;
+            font-family: 'Cabinet Grotesk' , sans-serif ;
+            padding-left: 4vw;
+        }
+        
+        #split{
+            height: calc(85vh - 5vh);
+            display: block;
+            /* background-color: aqua; */
+        }
+        
+        #ll{
+            height: 40%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: green; */
+            font-family: 'Cabinet Grotesk' , sans-serif ;
+            gap: 2vh;
+            padding-left: 0%;
+        }
+        
+        #ll>img{
+            height: 45%;
+            margin-top: 0%;
+            margin-left: 0%;
+            margin-bottom: 0%;
+            border-radius: 50%;
+        }
+        
+        #rr{
+            height: 60%;
+            width: 103%;
+            /* background-color: crimson; */
+            padding:  0vh 1vh;
+        }
+        
+        #rr>img{
+            width: 100%;
+            height: 100%;
+            padding-right: 0vh;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 35px;
+        }
+
+        #pg4{
+            height: 50vh;
+            width: 100%;
+            padding: 0vh 2vh;
+            margin-top: 5vh;
+        /*     background-color: aqua;
+         */
+        }
+        
+        #image{
+            height: 100%;
+            width: 100%;
+            background-image: url(https://t4.ftcdn.net/jpg/07/08/33/55/360_F_708335598_G6QFXagngM8yqi0Nuo7fXNGYEZvB16xI.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 75% 75%;
+            border-radius: 25px;
+        }
+        
+
+
+
+
+
+
+
+
+        #up{
+            height: 50vh;
+            width: 95%;
+            padding-left: 6vw;
+            /* background-color: magenta; */
+            margin-top: 2.5vh;
+            font-family: 'Cabinet Grotesk' , sans-serif;
+        }
+        
+        #up>h1{
+            margin-bottom: 1vh;
+            padding-left: 31%;
+            font-size: 4vh;
+        }
+        
+        .up1{
+            height: 10vh;
+            border-top: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
+        .upl{
+            height: 100%;
+            width: 33%;
+            /* background-color: aqua; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5vw;
+        }
+        
+        .upr{
+            height: 100%;
+            width: 50%;
+            /* background-color: green; */
+            font-size: 1.7vh;
+            padding-top: 2.5vh;
+            padding-left: 3vw;
+        
+        }
+        
+        
+        .up1>.upl>img{
+            height: 8vh;
+            width: 15vw;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+        }
+        #big{
+            line-height: 1.2vh;
+            font-size: 2vh;
+        }
+        #small{
+            font-size: 1.3vh;
+        }
+        
+        .upll{
+            margin-left: 1vw;
+            font-family: 'Cabinet Grotesk' , sans-serif;
+            font-size: 2.2vh;
+        }
+        
+        #page5{
+            height: 80vh;
+            width: 100%;
+            /* background-color: beige; */
+            display: block;
+            margin-top: 0vh;
+        }
+        
+        #page5-left{
+            height: 40%;
+            width: 100%;
+            /* background-color: green; */
+            padding: 0vw 2vh;
+        }
+        #page5-left>img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+        }
+        
+        #page5-right{
+            height: 60%;
+            width: 100%;
+            /* background-color: red; */
+            padding: 0vw 2vw 0vw 4vw;
+            margin-right: 0px;
+        }
+        
+        #page5-right>h1{
+            font-family: 'Cabinet Grotesk' , sans-serif;
+            font-size: 4.5vh;
+            margin-top: 2vh;
+            margin-bottom: 1vh;
+        }
+        
+        #page5-right>p{
+            font-family: 'Cabinet Grotesk' , sans-serif;
+            font-size: 2.25vh;
+            margin-bottom: 2vh;
+            line-height: 2.3vh;
+        }
+        
+        #page5-right>h3{
+            display: none;
+        }
+        
+        #page5-right-down{
+            width: 100%;
+            display: flex;
+            gap: 1vw; 
+            padding-right: 1vh;
+        }
+        
+        #page5-right-down>img{
+            width: 50%;
+        }
+        
+
+        #pg6{
+            height: 30vh;
+            width: 100%;
+            padding: 0vh 2vh;
+            margin-top: 2vh;
+        }
+        
+        #imagee{
+            height: 100%;
+            width: 100%;
+            background-image: url(https://im.mtvuutiset.fi/image/8043982/landscape16_9/1024/576/6fa59b9f57820462633c03fb09e2da88/UO/gigi-hadid-aop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 61% 50%;
+            border-radius: 25px;
+        }
+
+
+        #page7{
+            height: 70vh;
+            width: 96%;
+            /* background-color: beige; */
+            display: flex;
+            margin-top: 4.5vh;
+            font-family: 'Cabinet Grotesk' , sans-serif !important;
+            
+        }
+        
+        #page7-left{
+            height: 100%;
+            width: 80%;
+            /* background-color: green; */
+            padding-left:2vh;
+        }
+        
+        #page7-right>img{
+            height: 70%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 15px;
+            margin-bottom: 2vh;
+        }
+        
+        #page7-right{
+            height: 100%;
+            width: 60%;
+            /* background-color: red; */
+            padding-left:4vw;
+        }
+        #page7-right-down{
+            display: block;
+        }
+        
+        #page7-right-down>h2{
+            font-size: 2.5vh;
+            width: 100%;
+        }
+        
+        #page7-right-down>h3{
+            display: none;
+        }
+
+        #scroll2{
+            height: 12vh;
+            margin-top: 5vh;
+        }
+        
+
+        #page8{
+            height: 60vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-top: 5vh;
+            gap: 1vw;
+            font-family: 'Cabinet Grotesk' , sans-serif !important;
+        }
+        
+        #left{
+            height: 100%;
+            width: 15%;
+            /* background-color: green; */
+            padding-left: 2.5vw;
+        }
+        #left>h1{
+            font-size: 3vh;
+        }
+        
+        #mid{
+            height: 100%;
+            width: 40%;
+            /* background-color: green; */
+            margin-right: 2.5vw;
+        }
+        #mid>h2{
+            height: 25vh;
+            width: 100%;
+            font-size: 2vh;
+        }
+        
+        #mid>img{
+            height: 30vh;    
+        }
+        
+        #right{
+            height: 100%;
+            width: 35%;
+            /* background-color: green; */
+        }
+        #right>h2{
+            font-size: 2vh;
+            height: 25vh;
+            width: 100%;
+        }
+        
+        #right>img{
+            height: 30vh;    
+            width: 100%;
+            object-fit: cover;
+            object-position: 0% 100%;
+            border-radius: 15px;
+        }
+        
+        /* =================== */
+        
+        #footer{
+            height: 40vh;
+            width: 100%;
+            /* background-color: blanchedalmond; */
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            display: flex;
+            font-family: 'Cabinet Grotesk' , sans-serif !important;
+        }
+        
+        #fl{
+            height: 100%;
+            width: 40%;
+            /* background-color: aqua; */
+            display: block;
+            padding:  5vh 3vh;
+            border-right: 2px solid black;
+            line-height: 2.75vh;
+        }
+        
+        #fll>h1{
+            font-size: 5vh;
+            margin-top: 4.5vh;
+        }
+        #flr>h2{
+            font-size: 2vh;
+        }
+        
+        #flr{
+            padding-top: 1.1vw;
+        }
+        
+        
+        
+        #fm{
+            height: 100%;
+            width: 20%;
+            /* background-color: rgb(3, 27, 27); */
+            padding: 16.5vh 0.6vh;
+            font-size: 0.9vh;
+        }
+        
+        #fr{
+            height: 100%;
+            width: 40%;
+            /* background-color: rgb(54, 85, 85); */
+            border-left: 2px solid black;
+            padding-top: 2vh ;
+        }
+        
+        #fru{
+            height: 30%;
+            font-size: 1vh;
+            padding-top: 1.7vw;
+            padding-left: 1vw;
+            /* background-color: rgb(47, 154, 54); */
+        }
+        
+        #frd{
+            height: 50%;
+            width: 100%;
+            /* background-color: rgb(13, 52, 16); */
+            border-top: 2px solid black;
+            padding: 1.7vw 2vw;
+        }
+        
+        #icons{
+            margin-top: 2vh;
+        }
+        
+     
+}
 
 
 
