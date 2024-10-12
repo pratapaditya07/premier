@@ -6,7 +6,7 @@
 
 body{
     width: 100%;
-    height: 981vh;
+    height: 990vh;
     border: 8px solid  #101720;
     border-radius: 15px;
     background-color: #F8F8F8;
@@ -445,7 +445,7 @@ nav{
 
 #up{
     height: 95vh;
-    width: 95%;
+    width: 100%;
     padding-left: 6vw;
     /* background-color: magenta; */
     margin-top: 5vh;
@@ -460,7 +460,7 @@ nav{
 
 .up1{
     height: 20vh;
-    width: 100%;
+    width: 93%;
     /* background-color: antiquewhite; */
     border-top: 2px solid black;
     /* border-bottom: 1.5px solid black; */
@@ -488,8 +488,34 @@ nav{
     font-size: 3vh;
     padding-top: 6vh;
     padding-left: 3vw;
-
+    position: relative;
 }
+
+.upr:hover{
+    color: #F8F8F8;
+}
+
+.upr::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #101720;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0% , 0%) scale(0);
+    z-index: -1;
+}
+
+.upr::after:hover{
+    
+    transform: translate(-50% , -50%) scale(10);
+}
+
+
+
+
+
 
 
 .up1>.upl>img{
@@ -753,7 +779,7 @@ nav{
 /* =================== */
 
 #footer{
-    height: 40vh;
+    height: 35vh;
     width: 100%;
     /* background-color: blanchedalmond; */
     border-top: 2px solid black;
